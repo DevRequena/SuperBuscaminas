@@ -38,7 +38,7 @@ export const MatrixComponent = ({ size, setResult, setIsGameOver, isGameOver }) 
 
   return (
     <div
-      className="grid gap-0 p-2 w-fit bg-green-500"
+      className="grid gap-0 p-2 mb-3 w-fit bg-green-500"
       style={{
         gridTemplateColumns: `repeat(${size}, minmax(0, 1fr))`,
         width: `${size * 2.5 + size * 0.5}rem`,

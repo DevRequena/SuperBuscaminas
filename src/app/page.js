@@ -1,6 +1,5 @@
 'use client'
 import { MatrixComponent } from "./components/MatrixComponent";
-import { StatusGame } from "./components/StatusGame";
 import { MatrixInput } from "./components/MatrixInput";
 import { ResultDisplay } from "./components/ResultDisplay";
 import { useState } from "react";
@@ -50,7 +49,6 @@ export default function Home() {
       <MatrixInput setMatrixSize={setMatrixSize} isGameOver={isGameOver} />
       <ResultDisplay matrixSize={matrixSize} isGameOver={isGameOver} result={result}/>
       {matrixSize > 0 && <MatrixComponent size={matrixSize} setResult={setResult} setIsGameOver={setIsGameOver} />}
-      <StatusGame isGameOver={isGameOver} />
     </div>
   );
 }

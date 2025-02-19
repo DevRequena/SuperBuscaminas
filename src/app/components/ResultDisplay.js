@@ -5,7 +5,7 @@ export const ResultDisplay = ({ matrixSize, isGameOver, result }) => {
     <>
       {
         matrixSize > 0 && 
-        <div className='flex justify-center items-center mt-4 mb-4 gap-6'>
+        <div className='flex justify-center items-center mt-2 mb-4 gap-6'>
           <div className="bg-white p-4 rounded-lg shadow-md">
               <div className="text-lg font-medium text-gray-800">
                 Tu objetivo es sumar: {matrixSize} 
