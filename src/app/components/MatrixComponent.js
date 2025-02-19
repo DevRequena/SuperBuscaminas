@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { MatrixButton } from './MatrixButton';
 import { generateCellValue } from '../utils/generateCellValue';
 
-export const MatrixComponent = ({ size, setResult, setIsGameOver, isGameOver }) => {
+export const MatrixComponent = ({ size, setResult, setIsGameOver }) => {
   const [matrixValues, setMatrixValues] = useState([]);
 
   useEffect(() => {

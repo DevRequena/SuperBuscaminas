@@ -1,15 +1,12 @@
 'use client'
 
 import { useState } from "react";
+import { handleInputChange } from "../utils/handleInputChange";
 
 export const MatrixInput = ({ setMatrixSize }) => {
 
   const [inputValue, setInputValue] = useState('');
 
-  const handleInputChange = (event) => {
-    const newValue = Math.min(10, Math.max(0, parseInt(event.target.value) || 0));
-    setInputValue(newValue.toString());
-  };
 
   const handleSubmit = () => {
     const size = Number(inputValue);
