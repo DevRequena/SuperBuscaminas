@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from "react";
-import { handleInputChange } from "../utils/handleInputChange";
 
 export const MatrixInput = ({ setMatrixSize }) => {
 
@@ -16,6 +15,11 @@ export const MatrixInput = ({ setMatrixSize }) => {
       alert("Por favor, ingresa un número válido mayor que 1");
       setInputValue('')
     }
+  };
+
+  const handleInputChange = (event) => {
+    const newValue = Math.min(10, Math.max(0, parseInt(event.target.value) || 0));
+    setInputValue(newValue.toString());
   };
 
   return (
